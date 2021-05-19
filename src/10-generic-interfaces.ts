@@ -6,7 +6,7 @@ interface IUser<T> {
   id: T;
 }
 
-// Применение интерфейса + передача аргумент-типа
+// Применение интерфейса IUser
 const mango: IUser<number> = { id: 25 };
 const kiwi: IUser<string> = { id: 'd3g3ggdsgs4-35' };
 

@@ -1,4 +1,4 @@
-// Дженерик с обьектами - (расширение дженерика, указание обязательных свойств)
+// Дженерик с обьектами - (расширение дженерика, более точное указание формы дженерика)
 // Используем для того, чтобы создать границы для дженерика
 
 // Расширение дженерика + interface
@@ -27,19 +27,18 @@ const addFullName = <P extends IPerson>(person: P) => {
   };
 };
 
-console.log(
-  addFullName({
-    firstName: 'Kiwi',
-    lastName: 'Walles',
-  }),
-);
+const result = addFullName({
+  firstName: 'Kiwi',
+  lastName: 'Walles',
+});
 
-console.log(
-  addFullName({
-    firstName: 'Mango',
-    lastName: 'Potter',
-    age: 42,
-  }),
-);
+const result2 = addFullName({
+  firstName: 'Mango',
+  lastName: 'Potter',
+  age: 42,
+});
+
+console.log(result);
+console.log(result2);
 
 export {};

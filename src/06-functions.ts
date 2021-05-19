@@ -64,7 +64,7 @@ enum PizzaSize {
   Large = 'l',
 }
 
-// Интерфейсы (для описания сложных типов - обьекты)
+// Интерфейс + Enum для pizza (для описания сложных типов - обьекты)
 interface IPizza {
   size: PizzaSize.Small | PizzaSize.Medium | PizzaSize.Large;
   toppings: string[];
