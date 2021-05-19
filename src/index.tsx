@@ -5,6 +5,8 @@
 // import './05-enums';
 // import './06-functions';
 // import './07-classes';
-import './08-generics';
+// import './08-generics';
+// import './09-extends-generics';
+import './10-generic-interfaces';
 
 export {};
