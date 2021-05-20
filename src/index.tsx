@@ -8,6 +8,7 @@
 // import './08-generics';
 // import './09-extends-generics';
 // import './10-generic-interfaces';
-import './11-generic-examples';
+// import './11-generic-examples';
+import './12-generic-classes';
 
 export {};
