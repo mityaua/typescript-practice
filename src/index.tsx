@@ -1,14 +1,12 @@
-// import "./01-primitives";
-// import "./02-arrays";
-// import './03-types';
-// import './04-interfaces';
-// import './05-enums';
-// import './06-functions';
-// import './07-classes';
-// import './08-generics';
-// import './09-extends-generics';
-// import './10-generic-interfaces';
-// import './11-generic-examples';
-import './12-generic-classes';
+import * as React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './components/App';
+import './styles.css';
 
-export {};
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.querySelector('#root'),
+);
