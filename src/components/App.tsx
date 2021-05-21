@@ -2,6 +2,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 import CounterClass from './CounterClass';
 import CounterHook from './CounterHook';
 import ColorPicker from './ColorPicker';
+import Form from './Form';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -44,10 +45,10 @@ const App = () => (
       <Route path="/colorpicker">
         <ColorPicker options={colorPickerOptions} />
       </Route>
-      {/* <Route path="/form">
-        <Form />
+      <Route path="/form">
+        <Form onSubmit={cred => console.log(cred)} />
       </Route>
-      <Route path="/sync-todos">
+      {/* <Route path="/sync-todos">
         <TodosView />
       </Route> */}
     </Switch>
