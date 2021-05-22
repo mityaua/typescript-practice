@@ -3,6 +3,7 @@ import CounterClass from './CounterClass';
 import CounterHook from './CounterHook';
 import ColorPicker from './ColorPicker';
 import Form from './Form';
+import TodosView from './Todos/TodosView';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -48,9 +49,9 @@ const App = () => (
       <Route path="/form">
         <Form onSubmit={cred => console.log(cred)} />
       </Route>
-      {/* <Route path="/sync-todos">
+      <Route path="/sync-todos">
         <TodosView />
-      </Route> */}
+      </Route>
     </Switch>
   </>
 );
